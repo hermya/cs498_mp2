@@ -14,4 +14,4 @@ def increment():
 def get():
     return str(gethostname())
 
-app.run()
+app.run(host='0.0.0.0')
