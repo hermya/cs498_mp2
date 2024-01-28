@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/', methods=['POST'])
 def increment():
     global x
-    Popen("python3 stress_cpu.py")
+    Popen("python3 $(pwd)/stress_cpu.py")
     return "{}"
 
 @app.route('/', methods=['GET'])
